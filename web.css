@@ -5,7 +5,7 @@
 /*VIEWPORT SETTINGS*/
 
 .wrapper {
-  background-color:FFFFFF;
+  background-color:#F4E7D3; /*Peach Cream Puff*/
   margin: 0 auto;
   padding: 0 20;
   max-width: 1200px;
@@ -29,24 +29,33 @@ header {
     grid-area: one;
     grid-column: 1/2;
     grid-row: 1/2;
+    background-color: #C5C1BB; /*Dusty Elephant Hide */
+    margin:2%;
+  padding:2%;
 }
 
 nav {
     grid-area: two;
     grid-column: 1/2;
     grid-row: 2/3;
+    margin:2%;
+  padding:2%;
 }
 
 main {
     grid-area: three;
     grid-column: 1/2;
     grid-row: 3/4;
+    margin:2%;
+  padding:2%;
 }
 
 footer {
     grid-area: four;
     grid-column: 1/2;
     grid-row: 4/5;
+    margin:2%;
+    padding:2%;
 }
 /*END VIEWPORTSETTINGS*/
 
@@ -63,6 +72,38 @@ main {
     
 }
 
+
 footer {
    
 }
+
+h1{
+  text-align:center;
+}
+
+h2 {
+  text-align:center;
+}
+
+h3 {
+  text-align:center;
+}
+
+h4 {
+
+}
+
+h5 {
+}
+
+a {
+  color: #3A4F41; /*Feldgrau*/
+  text-decoration: none;
+  font-weight: bold;
+}
+a:hover {
+  color:#D4E6C8; /*Tea Green*/
+}
+
+
+
