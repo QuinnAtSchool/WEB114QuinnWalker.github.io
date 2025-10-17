@@ -17,17 +17,15 @@ totalExpenses = income + rent + groceries + utilities;
 remainingMoney = income - totalExpenses;
 
 //CALCULATE PERCENTAGES - X/INCOME * 100
-RentPer = rent / income * 100;
+rentPer = rent / income * 100;
 groceriesPer = groceries / income * 100;
 
 //PRINT THE RESULTS 
-debug.log ("Total Income Is: " + 
-    income.toLocaleString("en-US", {style: "currency", currency: "USD", }));
-debug.log ("Total Rent Cost Is: " + 
-    groceries.toLocaleString("en-US", { style: "currency", currency:"USD" }));
-debug.log ("Total Grocery Cost Is: ");
-debug.log ("Total Rent Cost Percent Is: ");
-debug.log ("Total Grocery Cost Percent Is: ");
+console.log ("Total Income Is: " + income.toLocaleString("en-US", {style: "currency", currency: "USD"}));
+console.log ("Total Rent Cost Is: " + groceries.toLocaleString("en-US", { style: "currency", currency:"USD"}));
+console.log ("Total Grocery Cost Is: $" + groceries );
+console.log ("Total Rent Cost Percent Is: " + groceriesPer + "%");
+console.log ("Total Grocery Cost Percent Is: " + rentPer +"%");
 
 
 //END SCRIPT
