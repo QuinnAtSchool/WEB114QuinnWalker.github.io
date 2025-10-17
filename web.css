@@ -1,1 +1,65 @@
+/* Quinn Walker Web110 Webpage Main CSS Sheet.*/
+/*Last updated 10/16/2025*/
 
+
+/*VIEWPORT SETTINGS*/
+.wrapper {
+  background-color:FFFFFF;
+  margin: 0 auto;
+  padding: 0 20;
+  max-width: 1200px;
+  box-sizing: border-box; 
+ border: 2px solid #A8C69F; /*Olivine Color*/
+}
+
+.wrapperGrid {
+    display: grid;
+    grid-template-areas:
+        "one"
+        "two"
+        "three"
+        "four";
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+}
+
+header {
+    grid-area: one;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+nav {
+    grid-area: two;
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+main {
+    grid-area: three;
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+footer {
+    grid-area: four;
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+/*END VIEWPORTSETTINGS*/
+
+header {
+    align-items:center; 
+}
+
+nav {
+    
+}
+
+main {
+    
+}
+
+footer {
+   
+}
