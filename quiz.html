@@ -1,0 +1,98 @@
+<!--Quin Walker, Created 10/23/2025, Last updated 10/23/2025-->
+<!--Extra Credit For Java Script Week 3. Create a one question quiz game-->
+
+
+<!--START OF SCRIPT-->
+<html lang="en">
+    <head>
+        <title> Week3 Extra Credit Quiz </title>
+        <meta charset= "utf-8">
+
+        <script>
+        //A Four question quiz. Responses are saved. 
+        let Q1Response;
+        let Q2Response;
+        let Q3Response;
+        let Q4Response;
+
+        //Asks the user the questions in the quiz
+        Q1Response = prompt ('Q1 "What is the capital of France?"', " ");
+        Q2Response = prompt ('Q2 "What is France`s national bird?"', " ");
+        Q3Response = prompt ('Q3 "What is France`s national fruit"', " ");
+        Q4Response = prompt ('Q4 "Which glass and metal structure designed by Chinese American architect' +  
+        'I. M.Pei stands in the main courtyard of the Louvre Museum?"', " ");
+
+        //Alters the question response to make spelling and spacing consistant 
+        Q1Response = (Q1Response.toLowerCase()).trim();
+        Q2Response = (Q2Response.toLowerCase()).trim();
+        Q3Response = (Q3Response.toLowerCase()).trim();
+        Q4Response = (Q4Response.toLowerCase()).trim();
+        //converts strings to lowercase letters and removes leading and following spaces. 
+
+        //Q1 if comparison 
+        if (Q1Response === "paris")
+        {
+            consle.log("Question 1 is correct. The capital of france is Paris.");
+        }
+        else 
+        {
+            consle.log("Question 1 is incorrect.")
+        }
+
+        //Q2 if comparison 
+        if (Q2Response === "gallic rooster")
+        {
+            consle.log("Question 2 is correct. The national bird of france is the Gallic rooster.");
+        }
+        else 
+        {
+            consle.log("Question 2 is incorrect.")
+        }
+
+        //Q3 if comparison 
+        if (Q1Response === "pear")
+        {
+            consle.log("Question 3 is correct. The national fruit of paris is the pear.");
+        }
+        else 
+        {
+            consle.log("Question 3 is incorrect.")
+        }
+
+        //Q4 if comparison 
+        if (Q1Response === "louvre pyramid")
+        {
+            consle.log("Question 4 is correct. The structure made by I. M.Pei. is the Louvre Pyramid");
+        }
+        else 
+        {
+            consle.log("Question 4 is incorrect.")
+        }
+        </script>
+    </head>
+    <body>
+        <h1>
+             France Quiz!!!!
+        </h1>
+        <h2>
+            Q1 "What is the capital of France?"
+            <!--Paris-->
+        </h2>
+        <h2>
+            Q2 "What is France's national bird?"
+            <!--Gallic rooster-->
+        </h2>
+        <h3>
+            Q3 "What is France's national fruit"
+            <!--Pear-->
+        </h3>
+        <h3>
+            Q4 "Which glass and metal structure designed by Chinese American architect I. M.
+             Pei stands in the main courtyard of the Louvre Museum?"
+             <!--Louvre Pyramid-->
+        </h3>
+    </body>
+</html>
+
+<!--END OF SCRIPT -->
+

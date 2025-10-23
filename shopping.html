@@ -1,0 +1,147 @@
+<!--Quin Walker, Created 10/23/2025, Last Updated 10/23/2025-->
+<!--Javascript Week 3 Homework If Statements And Comparison Operators-->
+
+
+<!--START OF SCRIPT-->
+<!--START SCRIPT-->
+<!DOCTYPE HTML>
+<html lang="en">
+    
+    
+    <head>
+        <title> Week3 Homework </title>
+        <meta charset= "utf-8">
+    
+
+    
+    <style>
+        /*START OF CSS*/
+        body {
+          background-color: blue;  
+        }
+
+        h1 {
+            color: gray; 
+        }
+
+        h2 {
+            color: gray; 
+        }
+
+        h3 {
+            color: gray; 
+        }
+
+        p {
+          color:white;
+        }
+        /*END OF CSS*/
+    </style>
+
+
+    <script>
+    //START OF JS SCRIPT
+    let discountPercent; 
+    let calculatedCost;
+    //asks coustomer for their shipping total
+    let total = prompt ("what is your shopping total?: "," "); 
+   
+    
+    //confirms response 
+    let userConfirmResponse = confirm (`is ${total} correct?`);
+
+    /*Test 	    Type   You Should See: 	  Why?
+    1 	25 	    OK 	   "No discount" 	25 < 50
+    2 	50 	    OK 	   "10% off" 	    50 ≥ 50
+    3 	75 	    OK 	   "10% off" 	    75 ≥ 50
+    4 	99 	    OK 	   "10% off" 	    99 ≥ 50
+    5 	100     OK 	   "20% off" 	    100 ≥ 100
+    6 	200     OK 	   "20% off" 	    200 ≥ 100
+    */
+    /* 
+    I ignored Q4 becuse there were conflicts. 
+
+    4.  Use an if statement to check if total is greater than or equal to 75.
+    If true, use an alert to show "10% off".
+
+    by the table 10% off starts at =50 not =75.
+    It doesnt make sense to either leave a hole in possible input,
+    or to redundently ask >=75 becuse we already asked >=50. 
+    We also need to set an upper limit with an && otherwise Q5 will never be asked.
+
+    */
+    //if statement tree
+    if (total <50 ) 
+    {
+        alert ("You dont get a discount")
+        discountPercent = 0; 
+    }
+    else if (total <= 50 && total <= 99)
+    {
+        alert ("You get a 10% discount")
+        discountPercent = 10
+    }
+    else (total >= 100)
+    {
+        alert ("Yout get a 20% discount ")
+        discountPercent = 20;
+    }
+    calculatedCost = total - (total * (discountPercent/100)) //
+    alert ("The total price is: " + calculatedCost);
+    //END OF JS SCRIPT
+    </script>
+    </head>
+
+
+    <body>
+        <div>
+            <h1>
+                 Project 3 
+            </h1>
+            <h2> 
+                Quinn Walker
+            </h2>
+        </div>
+        <div>
+            <h2> 
+                Questions 
+                <ol>
+                    <li>
+                        <p>Name a situation where you would need to create an "if" statement.
+                          (There are many answers to this question. )</p>
+                    </li>
+                    <li>
+                        <p>When comparing values, 
+                            in what data type is the result stored? (number, string, or Boolean?)</p>
+                    </li>
+                </ol>
+            </h2>
+
+            <h2> 
+                Answers 
+                <ol>
+                    <li>
+                        <p>
+                            I would use a if statement when I needed to compare varibles, check string statements,
+                            or if I needed a user to pick between a short list of options. 
+                            If a list has more thhan a couple of options I would want to use a switch statement. 
+                        </p>
+                    </li>
+                    <li>
+                        <p>
+                            the condition of an if statement is a bool that can evaluate to true or false.
+                        </p>
+                    </li>
+                </ol>
+            </h2>
+        </div>
+        <div>
+            <h2>
+                 Prompt And Confirm Windows Have Already Happened With Exersizes
+            </h2>
+        </div>
+    </body>
+    
+</html>
+<!--END SCRIPT-->
+<!--END OF SCRIPT-->
