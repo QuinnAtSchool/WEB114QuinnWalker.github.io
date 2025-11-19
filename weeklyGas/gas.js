@@ -10,7 +10,7 @@ function calcGasAvg()
     let userImput = 0;
     let total = 0;
     let averageGas = 0;
-    while (userInput != -1)
+    while (userImput != -1)
     {
         userInput = prompt ("What is your weekly gas total?", " ");
         entryCount = entryCount + 1; 
@@ -42,5 +42,6 @@ if (entryCount === 0)
 {
     alert ("You never made any entries into calcGasAverage");
 }
+
 
 //END OF SCRIPT
